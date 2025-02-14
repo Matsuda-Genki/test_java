@@ -9,8 +9,7 @@ public class cytech04 {
 
 	public static void main(String[] args) {
 		long now = Instant.now().getEpochSecond();
-		int parity = (int) now % 2;
-			switch(parity) {
+			switch((int) (now % 2)) {
 				case 0:
 					System.out.println("偶数です。");
 					break;
